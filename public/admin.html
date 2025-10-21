@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strapi CMS Admin</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .logo { color: #7b68ee; font-size: 24px; font-weight: bold; }
+        .section { margin: 20px 0; padding: 20px; background: #f8f9fa; border-radius: 4px; }
+        .btn { background: #7b68ee; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; display: inline-block; margin: 5px; }
+        .btn:hover { background: #6a5acd; }
+        .info { background: #e7f3ff; border-left: 4px solid #007eff; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class=container>
+        <div class=header>
+            <div class=logo>Strapi CMS</div>
+            <h1>Content Management System</h1>
+        </div>
+        
+        <div class=info>
+            <strong>Admin Login:</strong><br>
+            Email: admin@camelotwheel.org<br>
+            Password: Admin123!
+        </div>
+        
+        <div class=section>
+            <h3>API Endpoints</h3>
+            <a href=/api class=btn>View API</a>
+            <a href=/api/content-manager/collection-types class=btn>Content Types</a>
+            <a href=/api/users class=btn>Users</a>
+        </div>
+        
+        <div class=section>
+            <h3>Quick Actions</h3>
+            <p>Use these links to manage your content:</p>
+            <a href=/api/content-manager/collection-types class=btn>Manage Content</a>
+            <a href=/api/users class=btn>Manage Users</a>
+        </div>
+        
+        <div class=section>
+            <h3>Database Access</h3>
+            <p>Database: camelotw_cms</p>
+            <p>Host: localhost</p>
+            <p>Username: camelotw_cms</p>
+        </div>
+    </div>
+</body>
+</html>
